@@ -5,4 +5,3 @@ tensorflow_gpu==1.10.1
 pandas==0.17.1
 matplotlib==1.5.1
 scikit_learn==0.20.1
-tensorflow==1.12.0

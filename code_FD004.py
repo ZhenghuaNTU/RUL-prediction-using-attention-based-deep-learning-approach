@@ -170,6 +170,14 @@ TIME_STEPS = trainData.shape[1]
 SINGLE_ATTENTION_VECTOR = False
 APPLY_ATTENTION_BEFORE_LSTM = False
 
+def myScore(y_ture,y_pred):
+    score = 0
+    for i in range(len(y_pred)):
+        if y_ture[i] <= y_pred[i]:
+            score = score + np.exp(-(y_ture[i]-y_pred[i])/10.0)-1
+        else:
+            score = score + np.exp((y_ture[i]-y_pred[i])/13.0)-1
+    return score
 
 def attention_3d_block(inputs):
     input_dim = int(inputs.shape[2])

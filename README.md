@@ -12,3 +12,13 @@ python code_FD001.py
 python code_FD004.py
 
 Note that: attention_utils.py can be downloaded from https://github.com/philipperemy/keras-attention-mechanism
+
+** The results for FD002 and FD003 are as follows:**
+
+FD002:
+RMSE: 21.37 
+Score: 3077 
+
+FD003:
+RMSE: 13.24 
+Score: 367
